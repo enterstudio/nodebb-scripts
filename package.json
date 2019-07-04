@@ -4,7 +4,9 @@
   "description": "Some scripts for V2MM, which is based on NodeBB",
   "main": "create-categories",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -27,6 +29,8 @@
     "shelljs-nodecli": "*",
     "archiver": "*",
     "fs-extra": "*",
-    "moment": "*"
-  }
+    "moment": "*",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
